@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "3eac8410-874e-4b05-83bc-74a8e9252613",
+		"name": "peoplespheres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://peoplespheres/emailMaker.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CSRF-TOKEN",
+						"value": "zQum9qS8IWmJDbNyRTSefMIhjoI6nhLI6vujBnKI",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "input1[value]",
+							"value": "Jean-Louis",
+							"type": "default"
+						},
+						{
+							"key": "input1[expression]",
+							"value": "eachWordFirstChars",
+							"type": "default"
+						},
+						{
+							"key": "input1[arg]",
+							"value": "",
+							"type": "default"
+						},
+						{
+							"key": "input2[value]",
+							"value": "Jean-Charles Mignard",
+							"type": "default"
+						},
+						{
+							"key": "input2[expression]",
+							"value": "lastWord",
+							"type": "default"
+						},
+						{
+							"key": "at",
+							"value": "@",
+							"type": "default"
+						},
+						{
+							"key": "input3[value]",
+							"value": "external",
+							"type": "default"
+						},
+						{
+							"key": "input4[value]",
+							"value": "peoplespheres",
+							"type": "default"
+						},
+						{
+							"key": "input5[value]",
+							"value": "fr",
+							"type": "default"
+						},
+						{
+							"key": "at",
+							"value": "@",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://peoplespheres/new-email",
+					"protocol": "http",
+					"host": [
+						"peoplespheres"
+					],
+					"path": [
+						"new-email"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
